@@ -1,72 +1,190 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Undangan Randi & Elisa</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Randi & Elisa | Undangan Pernikahan</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="color-scheme" content="light only">
+  <meta name="description" content="Undangan Pernikahan Randi & Elisa">
+  <meta name="keywords" content="Undangan Pernikahan, Wedding Invitation, Randi Elisa">
+
+  <!-- Open Graph (AMAN untuk GitHub) -->
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:title" content="Randi & Elisa">
+  <meta property="og:description" content="Undangan Pernikahan Randi & Elisa">
+  <meta property="og:image" content="./img/thumbnail.jpg">
+
+  <!-- Favicon (WAJIB lokal) -->
+  <link rel="icon" href="./img/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap + Icons (CDN WAJIB) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Animate & AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- THEME CSS (LOCAL FILE – HARUS ADA DI REPO) -->
+  <link href="./css/theme.css" rel="stylesheet">
+  <link href="./css/custom.css" rel="stylesheet">
+  <link href="./themes/arunima/css/variable.css" rel="stylesheet">
+  <link href="./themes/arunima/css/styles.css" rel="stylesheet">
+
+  <!-- CUSTOM STYLE -->
+  <style>
+    :root{
+      --font1: 32px;
+      --font2: 28px;
+      --font3: 14px;
+      --font4: 12px;
+    }
+
+    body{ font-size: var(--font3); }
+
+    .hide{ display:none!important; }
+
+    .text-size-title{ font-size:var(--font1); }
+    .text-size-subtitle{ font-size:var(--font2); }
+    .text-size-content{ font-size:var(--font3); }
+    .text-size-caption{ font-size:var(--font4); }
+
+    .main-photo{
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.AOS) AOS.init();
+    });
+  </script>
 </head>
-<body>
 
-<audio autoplay loop>
-  <source src="./music/backsound.mp3" type="audio/mpeg">
-</audio>
+<body id="kt_body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
 
-<section class="cover">
-  <p class="small">The Wedding Of</p>
-  <h1>Randi & Elisa</h1>
-  <p class="date">06 Februari 2026</p>
-</section>
-
-<section class="quote">
-  <p>
-    “Pernikahan adalah ibadah terpanjang, tempat dua hati yang dipertemukan oleh takdir,
-    disatukan dalam satu akad suci untuk saling menjaga dan menguatkan dalam ridha Allah
-    hingga akhir hayat.”
-  </p>
-</section>
-
-<section class="mempelai">
-  <div>
-    <h2>Randi Suganda, S.Kom</h2>
-    <p>Putra pertama dari<br>Bapak Syaiful Bakri<br>Ibu Islamiati (Meti)</p>
+<!-- PRELOADER (STATIC) -->
+<div class="preloader d-none">
+  <div class="loading text-center">
+    <div class="spinner-border"></div>
   </div>
+</div>
 
-  <span class="dan">&</span>
+<div class="container-fluid p-0 d-flex justify-content-center">
+  <div class="col-md-6 p-0">
 
-  <div>
-    <h2>Elisa Maulidini Siti Ningrum</h2>
-    <p>Putri pertama dari<br>Bapak Eldasri<br>Ibu Ai Komaria</p>
+    <!-- COVER -->
+    <section id="cover" class="text-center position-relative">
+      <img src="./themes/arunima/img/corner-top.png" class="w-50 position-absolute top-0 end-0">
+      <div class="pt-5">
+        <div class="text-size-content">Undangan Pernikahan</div>
+        <div class="font-title text-size-title">Randi</div>
+        <div class="font-title">&amp;</div>
+        <div class="font-title text-size-title">Elisa</div>
+
+        <div class="mt-4">
+          <strong>Rabu</strong><br>
+          <span class="text-size-subtitle">11 Februari 2026</span>
+        </div>
+
+        <div class="mt-3">
+          <div>Kepada Yth:</div>
+          <strong>Nama Tamu</strong>
+        </div>
+      </div>
+      <img src="./themes/arunima/img/Asset-3.png" class="w-100 mt-4">
+    </section>
+
+    <!-- QUOTE -->
+    <section id="quote" class="text-center py-4">
+      <em>
+        سُبْحٰنَ الَّذِيْ خَلَقَ الْاَزْوَاجَ كُلَّهَا مِمَّا تُنْۢبِتُ الْاَرْضُ وَمِنْ اَنْفُسِهِمْ وَمِمَّا لَا يَعْلَمُوْنَ<br><br>
+        Maha Suci Allah yang telah menciptakan pasangan-pasangan semuanya.
+      </em>
+      <div class="fw-bold mt-2">QS. Yasin: 36</div>
+      <img src="./themes/arunima/img/Asset-3.png" class="w-100 mt-4">
+    </section>
+
+    <!-- MEMPELAI -->
+    <section id="detail" class="text-center py-4">
+      <p>Kami mohon doa dan restu atas pernikahan kami</p>
+
+      <h3 class="font-title">Randi Suganda, S.Kom</h3>
+      <p class="text-size-caption">Putra Kedua dari Bpk. Syaiful Bakri & Ibu Islamiati</p>
+
+      <h3 class="font-title mt-3">Elisa Maulidini Siti Ningrum</h3>
+      <p class="text-size-caption">Putri Pertama dari Bpk. Eldasri & Ibu Ai Komaria</p>
+
+      <img src="./themes/arunima/img/Asset-3.png" class="w-100 mt-4">
+    </section>
+
+    <!-- ACARA -->
+    <section id="schedule" class="text-center py-4">
+      <h2 class="font-title">Acara</h2>
+
+      <div class="mt-3">
+        <strong>Akad Nikah</strong><br>
+        Jumat, 06 Februari 2026<br>
+        09.00 WIB<br>
+        Mushola Tanjung Arai
+      </div>
+
+      <div class="mt-4">
+        <strong>Resepsi</strong><br>
+        Rabu, 11 Februari 2026<br>
+        10.00 WIB<br>
+        Sungai Dareh
+      </div>
+
+      <img src="./themes/arunima/img/Asset-3.png" class="w-100 mt-4">
+    </section>
+
+    <!-- RSVP (STATIC) -->
+    <section id="rsvp" class="text-center py-4">
+      <h2 class="font-title">RSVP</h2>
+      <p>Silakan konfirmasi kehadiran melalui WhatsApp</p>
+      <a href="https://wa.me/628xxxxxxxxxx" class="btn btn-primary">Konfirmasi Kehadiran</a>
+      <img src="./themes/arunima/img/Asset-3.png" class="w-100 mt-4">
+    </section>
+
+    <!-- PENUTUP -->
+    <section id="closing" class="text-center py-4">
+      <p>Atas kehadiran dan doa restu, kami ucapkan terima kasih</p>
+      <h3 class="font-title">Randi & Elisa</h3>
+      <img src="./themes/arunima/img/Asset-3.png" class="w-100 mt-4">
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-3">
+      <small>Randi & Elisa E-Invitation</small>
+    </footer>
+
   </div>
-</section>
+</div>
 
-<section class="acara">
-  <div class="box">
-    <h3>Akad Nikah</h3>
-    <p><b>Jumat, 06 Februari 2026</b></p>
-    <p>09.00 WIB – Selesai</p>
-    <p>Mushola Tanjung Arai<br>Nag. Siguntur I<br>Kec. Sitiung</p>
-  </div>
-
-  <div class="box">
-    <h3>Resepsi</h3>
-    <p><b>Kamis, 11 Februari 2026</b></p>
-    <p>10.00 WIB – Selesai</p>
-    <p>Jr. Koto Tangah<br>Nag. Sungai Dareh<br>Kec. Pulau Punjung</p>
-  </div>
-</section>
-
-<section class="penutup">
-  <p>
-    Atas kehadiran dan doa restu Bapak/Ibu/Saudara/i kami ucapkan terima kasih.
-  </p>
-  <p class="salam">
-    Wassalamu’alaikum Warahmatullahi Wabarakatuh
-  </p>
-</section>
+<!-- NAVBAR -->
+<nav id="navbar" class="navbar fixed-bottom bg-light justify-content-center">
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a class="nav-link active" href="#cover">📄</a></li>
+    <li class="nav-item"><a class="nav-link" href="#detail">❤️</a></li>
+    <li class="nav-item"><a class="nav-link" href="#schedule">📅</a></li>
+  </ul>
+</nav>
 
 </body>
+
 </html>
